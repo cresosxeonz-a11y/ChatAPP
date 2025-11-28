@@ -1,2 +1,2 @@
-Google_Api = "AIzaSyB-gt4MyCVbSSovZ-Xp2O_ksOyTvSzVj7g"
-OpenRouter_Api = "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"
+Google = "AIzaSyB-gt4MyCVbSSovZ-Xp2O_ksOyTvSzVj7g"
+OpenRouter = "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"
