@@ -136,7 +136,7 @@ form {
 
 .btn {
     width: 100%;
-    height: 48px;
+    height: 7vh;
     /* background: #14ebdd; */
     background: #7494ec;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
@@ -160,16 +160,27 @@ form {
 }
 
 .social-icons i {
-    display: inline-flex;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    font-size: 24px;
-    color: #333;
-    text-decoration: none;
-    margin: 0 8px;
+    font-size: 2.5em;
+    height: 7vh;
+    width: 15%;
+    border: 2px solid #33333365;
+    border-radius: 10px;
+     background: conic-gradient(
+        from -90deg at 50% 50%,
+        #FBBC05 0deg 30deg,
+        #EA4335 30deg 130deg,
+        #4285F4 130deg 220deg,
+        #34A853 220deg 320deg,
+        #FBBC05 320deg 360deg
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
 }
-
 
 .toggle-box {
     position: absolute;

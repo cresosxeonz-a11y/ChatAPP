@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chautara</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./chat.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/Chautari_nobg.png" />
+</head>
+
+<body>
+
+    <!-- Login page -->
+    <div class="login-page" id="login-page">
+        <div class="bg-container">
+            <img src="images/chautara.jpg" alt="Background Image">
+        </div>
+
+        <div class="container">
+
+            <!-- Login page form -->
+            <div class="form-box login">
+                <form id="login-form" action="">
+                    <h1>Login</h1>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+
+                    <div class="forgot-link">
+                        <a href="#">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn">Login</button>
+
+                    <p>or login with social media platform</p>
+
+                    <div class="social-icons">
+                        <!-- Google login button -->
+                         <i class='bx bxl-google'></i>
+                        <button type="button" id="google-login-btn" class="btn social-btn">
+                             Login with Google
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Register page form -->
+            <div class="form-box register">
+                <form id="register-form" action="">
+                    <h1>Registration</h1>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" required>
+                        <i class='bx bxs-user'></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="email" placeholder="Email" required>
+                        <i class='bx bxs-envelope'></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" required>
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+
+                    <button type="submit" class="btn">Register</button>
+
+                    <p>or register with social media platform</p>
+
+                    <div class="social-icons">
+                        <!-- Google register button -->
+                         <i class='bx bxl-google' ></i>
+                        <button type="button" id="google-register-btn" class="btn social-btn">
+                             Register with Google
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Toggle panels -->
+            <div class="toggle-box">
+                <div class="toggle-panel toggle-left">
+                    <div class="logo-container">
+                        <img src="images/Chautari_nobg.png" alt="Chautara Logo">
+                    </div>
+                    <h1>Hello, Welcome</h1>
+                    <p>Don't have an account?</p>
+                    <button class="btn register-btn">Register</button>
+                </div>
+
+                <div class="toggle-panel toggle-right">
+                    <div class="logo-container">
+                        <img src="images/Chautari_nobg.png" alt="Chautara Logo">
+                    </div>
+                    <h1>Welcome Back!</h1>
+                    <p>Already have an account?</p>
+                    <button class="btn login-btn">Login</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Chat System -->
+
+
+    <div class="chat-system" id="chat-system" style="display:none">
+        <div class="top-section">
+            <h1>Chautara</h1>
+        </div>
+        <div class="bottom-section">
+            <div class="left-bar">
+                <div class="left-top">
+                    <div class="group-section">
+                        <div class="logo-icon">
+                            <img src="images/Chautari_nobg.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="friend-section">
+
+                    </div>
+                </div>
+                <div class="left-bottom">
+                    <div class="profile-info">
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="right-bar">
+                <div class="right-top">
+
+                </div>
+                <div class="right-bottom">
+                    <div class="chat-section">
+
+                    </div>
+                    <div class="online-section">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FireBase Configuration -->
+
+    <script src="./login.js"></script> <!-- Javascript Source -->
+    <script type="module"> //FireBase Configuration
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCf834zOmx_cZRpGVERQBRKKoz75eQuzQg",
+            authDomain: "chautara-chat.firebaseapp.com",
+            projectId: "chautara-chat",
+            storageBucket: "chautara-chat.firebasestorage.app",
+            messagingSenderId: "721377984762",
+            appId: "1:721377984762:web:d78febb64826c4ee8a0943",
+            measurementId: "G-EJY8WBD90D"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+:root {
+    /* --- The Canopy (Greens) --- */
+    /* Deep shadow of the banyan/pipal leaves */
+    --green-deep: #2D4F35;
+    /* The standard vibrant leaf color */
+    --green-leaf: #4F8A58;
+    /* Light, fresh new leaves (good for active states) */
+    --green-sprout: #8FBC8F;
+    /* Very faint mint tint (good for backgrounds) */
+    --green-mist: #E8F5E9;
+
+    /* --- The Trunk & Earth (Browns) --- */
+    /* Dark, old bark (good for text or dark mode UI) */
+    --brown-bark: #4E342E;
+    /* Warm wood tone */
+    --brown-trunk: #795548;
+    /* Lighter clay/earth tone */
+    --brown-clay: #A1887F;
+
+    /* --- The Chautara Platform (Neutrals) --- */
+    /* The color of the stone/mud platform */
+    --beige-stone: #EFEBE9;
+    /* Warm cream (good for chat bubbles) */
+    --cream-dust: #F5F0E6;
+    /* Clean off-white */
+    --white-soft: #FAFAFA;
+
+    /* --- Nature Accents --- */
+    /* Marigold orange (often found near chautaris) */
+    --orange-marigold: #F39C12;
+    /* Clear sky blue */
+    --blue-sky: #5DADE2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Containers & Sections */
+
+.top-section {
+    width: 100%;
+    height: 5%;
+    background-color: var(--green-leaf);
+}
+
+.bottom-section {
+    width: 100%;
+    height: 95%;
+    background-color: var(--green-deep);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+/* Gropus and Friends Section */
+.left-bar {
+    width: 20%;
+    height: 100%;
+    background-color: var(--green-leaf);
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.left-top {
+    width: 100%;
+    height: 89%;
+    background-color: var(--green-leaf);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.group-section {
+    height: 100%;
+    width: 25%;
+}
+
+.friend-section {
+    height: 100%;
+    width: 75%;
+    border-top-left-radius: 15px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.left-bottom {
+    width: 95%;
+    height: 10%;
+    margin-left: 2.5%;
+    border-radius: 15px;
+    background-color: var(--beige-stone);
+}
+
+
+/* Chat and Online Section */
+.right-bar {
+    width: 80%;
+    height: 100%;
+    background-color: var(--white-soft);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid black;
+}
+
+.right-top {
+    height: 7%;
+    width: 100%;
+    background-color: var(--green-mist);
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.right-bottom {
+    height: 93%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-section {
+    width: 80%;
+    height: 100%;
+    background-color: var(--cream-dust);
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.online-section {
+    width: 20%;
+    height: 100%;
+    background-color: var(--green-mist);
+    border-top: 2px solid black;
+}
+
+/* Designs */
+.top-section h1{
+    color: var(--white-soft);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.logo-icon{
+    height: 10%;
+    width: 80%;
+    border-radius: 15px;
+    background-color: var(--green-deep);
+    margin-left: 10%;
+    box-shadow: 0px 0px 10px var(--white-soft);
+    margin-top: 5%;
+}
+
+.logo-icon img{
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
